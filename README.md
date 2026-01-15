@@ -59,8 +59,8 @@ By default, the theme will use a round separator for left and right.
 To overwrite it use `@gruvbox_left_separator` and `@gruvbox_right_separator`
 
 ```sh
-set -g @gruvbox_left_separator "█"
-set -g @gruvbox_right_separator "█"
+set -g @gruvbox_left_separator ""
+set -g @gruvbox_right_separator ""
 ```
 
 ##### Enable DateTime
