@@ -66,11 +66,11 @@ main() {
   readonly wt_enabled
 
   local right_separator
-  right_separator="$(get_tmux_option "@gruvbox_right_separator" "")"
+  right_separator="$(get_tmux_option "@gruvbox_right_separator" "█")"
   readonly right_separator
 
   local left_separator
-  left_separator="$(get_tmux_option "@gruvbox_left_separator" "")"
+  left_separator="$(get_tmux_option "@gruvbox_left_separator" "█")"
   readonly left_separator
 
   local user

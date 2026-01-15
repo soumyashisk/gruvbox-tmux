@@ -8,6 +8,10 @@
   <em>Based on <a href="https://github.com/catppuccin/tmux">Catppuccin Tmux</a></em>
 </p>
 
+<p align="center">
+  <img src="./preview.png" alt="Gruvbox Tmux Preview"/>
+</p>
+
 ## About
 
 This Tmux theme brings the beloved Gruvbox color scheme to your terminal multiplexer. With its warm, earthy tones and excellent contrast, Gruvbox provides a comfortable and aesthetically pleasing environment for your terminal sessions.
@@ -27,18 +31,16 @@ set -g @plugin 'tmux-plugins/tpm'
 
 3. Press `prefix + I` to install the plugin
 
-### Manual
+### Manual Installation
 
-1. Copy your desired theme's configuration contents into your Tmux config (usually stored at `~/.tmux.conf`)
+1. Copy the theme configuration from [gruvbox.tmuxtheme](./gruvbox.tmuxtheme) into your Tmux config (usually stored at `~/.tmux.conf`)
 2. Reload Tmux by either restarting the session or reloading it with `tmux source-file ~/.tmux.conf`
 
-#### Configuration options
+## Configuration
 
-All flavours support certain levels of customization that match our [Catppuccin
-Style Guide][style-guide]. To add these customizations, add any of the following
-options to your Tmux configuration.
+The theme supports various customization options to match your preferences.
 
-In order to have the correct icons displayed please use your favorite nerd fonts patched font.
+> **Note:** To display icons correctly, please use a [Nerd Font](https://www.nerdfonts.com/) patched font.
 
 ##### Enable window tabs
 
