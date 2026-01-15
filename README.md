@@ -24,7 +24,7 @@ This Tmux theme brings the beloved Gruvbox color scheme to your terminal multipl
 2. Add the Gruvbox plugin to your `~/.tmux.conf`:
 
 ```bash
-set -g @plugin 'gruvbox-tmux'
+set -g @plugin 'soumyashisk/gruvbox-tmux'
 # ...alongside
 set -g @plugin 'tmux-plugins/tpm'
 ```
