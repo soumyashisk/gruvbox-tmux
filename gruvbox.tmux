@@ -60,29 +60,29 @@ main() {
 
   # --------=== Statusline
 
-  # NOTE: Checking for the value of @catppuccin_window_tabs_enabled
+  # NOTE: Checking for the value of @gruvbox_window_tabs
   local wt_enabled
-  wt_enabled="$(get_tmux_option "@catppuccin_window_tabs_enabled" "off")"
+  wt_enabled="$(get_tmux_option "@gruvbox_window_tabs" "off")"
   readonly wt_enabled
 
   local right_separator
-  right_separator="$(get_tmux_option "@catppuccin_right_separator" "")"
+  right_separator="$(get_tmux_option "@gruvbox_right_separator" "")"
   readonly right_separator
 
   local left_separator
-  left_separator="$(get_tmux_option "@catppuccin_left_separator" "")"
+  left_separator="$(get_tmux_option "@gruvbox_left_separator" "")"
   readonly left_separator
 
   local user
-  user="$(get_tmux_option "@catppuccin_user" "off")"
+  user="$(get_tmux_option "@gruvbox_user" "off")"
   readonly user
 
   local host
-  host="$(get_tmux_option "@catppuccin_host" "off")"
+  host="$(get_tmux_option "@gruvbox_host" "off")"
   readonly host
 
   local date_time
-  date_time="$(get_tmux_option "@catppuccin_date_time" "off")"
+  date_time="$(get_tmux_option "@gruvbox_date_time" "off")"
   readonly date_time
 
   # These variables are the defaults so that the setw and set calls are easier to parse.
@@ -130,7 +130,7 @@ main() {
   local window_status_format=$show_directory_in_window_status
   local window_status_current_format=$show_directory_in_window_status_current
 
-  # NOTE: With the @catppuccin_window_tabs_enabled set to on, we're going to
+  # NOTE: With the @gruvbox_window_tabs set to on, we're going to
   # update the right_column1 and the window_status_* variables.
   if [[ "${wt_enabled}" == "on" ]]; then
     right_column1=$show_directory

@@ -1,45 +1,31 @@
-<h3 align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/tmux/tmux">Tmux</a>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-</h3>
+<h1 align="center">Gruvbox for Tmux</h1>
 
 <p align="center">
-    <a href="https://github.com/catppuccin/tmux/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/tmux?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/issues"><img src="https://img.shields.io/github/issues/catppuccin/tmux?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/tmux?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+  A warm and retro Gruvbox theme for <a href="https://github.com/tmux/tmux">Tmux</a>
 </p>
 
 <p align="center">
-  <img src="./assets/preview.webp"/>
+  <em>Based on <a href="https://github.com/catppuccin/tmux">Catppuccin Tmux</a></em>
 </p>
 
-## Themes
+## About
 
-- 🌻 [Latte](./catppuccin-latte.tmuxtheme)
-- 🪴 [Frappé](./catppuccin-frappe.tmuxtheme)
-- 🌺 [Macchiato](./catppuccin-macchiato.tmuxtheme)
-- 🌿 [Mocha](./catppuccin-mocha.tmuxtheme)
+This Tmux theme brings the beloved Gruvbox color scheme to your terminal multiplexer. With its warm, earthy tones and excellent contrast, Gruvbox provides a comfortable and aesthetically pleasing environment for your terminal sessions.
 
-## Usage
+## Installation
 
-### TPM
+### TPM (Recommended)
 
 1. Install [TPM](https://github.com/tmux-plugins/tpm)
-2. Add the Catppuccin plugin:
+2. Add the Gruvbox plugin to your `~/.tmux.conf`:
 
 ```bash
-set -g @plugin 'catppuccin/tmux'
+set -g @plugin 'gruvbox-tmux'
 # ...alongside
 set -g @plugin 'tmux-plugins/tpm'
 ```
 
-3. (Optional) Set your preferred flavour, it defaults to `"mocha"`:
-
-```bash
-set -g @catppuccin_flavour 'latte' # or frappe, macchiato, mocha
-```
+3. Press `prefix + I` to install the plugin
 
 ### Manual
 
@@ -57,22 +43,22 @@ In order to have the correct icons displayed please use your favorite nerd fonts
 ##### Enable window tabs
 
 By default, the theme places the `window-status` in the `status-right`. With
-`@catppuccin_window_tabs_enabled` set to `on`, the theme will place the
+`@gruvbox_window_tabs` set to `on`, the theme will place the
 directory within the `status-right` and move the window names to the
 `window-status` format variables.
 
 ```sh
-set -g @catppuccin_window_tabs_enabled on # or off to disable window_tabs
+set -g @gruvbox_window_tabs on # or off to disable window_tabs
 ```
 
 ##### Configure separator
 
 By default, the theme will use a round separator for left and right.
-To overwrite it use `@catppuccin_left_separator` and `@catppuccin_right_separator` 
+To overwrite it use `@gruvbox_left_separator` and `@gruvbox_right_separator`
 
 ```sh
-set -g @catppuccin_left_separator "█"
-set -g @catppuccin_right_separator "█"
+set -g @gruvbox_left_separator "█"
+set -g @gruvbox_right_separator "█"
 ```
 
 ##### Enable DateTime
@@ -81,7 +67,7 @@ By default, the `date_time` componenet is set to off.
 It can be enabled by specifing any tmux date and time format.
 
 ```sh
-set -g @catppuccin_date_time "%Y-%m-%d %H:%M"
+set -g @gruvbox_date_time "%Y-%m-%d %H:%M"
 ```
 
 ##### Enable User
@@ -90,7 +76,7 @@ By default, the `user` componenet is set to off.
 It can be enabled by toggoling it on.
 
 ```sh
-set -g @catppuccin_user "on"
+set -g @gruvbox_user "on"
 ```
 
 ##### Enable Host
@@ -99,7 +85,7 @@ By default, the `host` componenet is set to off.
 It can be enabled by toggoling it on.
 
 ```sh
-set -g @catppuccin_host "on"
+set -g @gruvbox_host "on"
 ```
 
 [style-guide]: https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md
